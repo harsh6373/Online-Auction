@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.online_auction">
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User_Info"></activity>
+        <activity android:name=".buyhistory" />
+        <activity android:name=".terms_and_condition" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Contact_Us" />
+        <activity android:name=".About_Us" />
+        <activity android:name=".Password_Updated" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".F_verification" />
+        <activity android:name=".Forgot_Password" />
+        <activity android:name=".sellhistory" />
+        <activity android:name=".sellproduct" />
+        <activity android:name=".sellerprofile" />
+        <activity android:name=".bidrequests" />
+        <activity android:name=".sellerhome" />
+        <activity android:name=".dproduct1" />
+        <activity android:name=".products" />
+        <activity android:name=".navprofile" />
+        <activity android:name=".navbids" />
+        <activity android:name=".navcategory" />
+        <activity android:name=".SignUp_new" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home" />
+    </application>
+
+</manifest>

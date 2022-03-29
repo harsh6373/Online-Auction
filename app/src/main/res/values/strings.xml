@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Online_Auction</string>
+    <string name="register">REGISTER</string>
+    <string name="seller">Seller</string>
+    <string name="registration">Registration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome_to_online_auction_no_need_to_run_bidding_is_fun">Welcome To Online Auction No Need to Run, Bidding is Fun</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

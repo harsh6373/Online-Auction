@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/smenu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME"
+        />
+    <item android:id="@+id/smenu_sellproduct"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        android:title="SELL PRODUCT"
+        />
+    <item android:id="@+id/smenu_bidrequests"
+        android:icon="@drawable/ic_baseline_request_page_24"
+        android:title="BID REQUESTS"
+        />
+    <item android:id="@+id/smenu_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="PROFILE"
+        />
+
+</menu>

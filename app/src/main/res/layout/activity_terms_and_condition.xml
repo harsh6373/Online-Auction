@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".terms_and_condition">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="83dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="Terms &amp; Condition"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <View
+                android:id="@+id/hr1"
+                android:layout_width="500dp"
+                android:layout_height="4dp"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.375"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp"
+                android:text="FOLLOWING TERMS AND CONDITIONS OF THE AUCTION.
+
+I HEREBY AGREE TO BE BOUND BY THE FOLLOWING TERMS AND CONDITIONS.
+
+I FURTHER AGREE TO BE RESPONSIBLE AND PAY FOR ALL PURCHASES.
+
+
+
+100% Guarantee. Your satisfaction is our top priority; we strive to offer excellent Customer Service to our clients. We will issue refunds on Online Auction Items, under certain conditions that have been legally (established by or recognized by a court of law) found to be fraudulent, or unauthentic. Items are sold with the Certificate of Authenticity as described and items will not be refunded due to differing opinions of other companies, people, industry people, Authenticators and/or Authentication opinions.
+
+Bidding on Items
+You must be a registered user to bid on items. By bidding, you are stating that you are ready and willing to purchase that item for your bid amount, plus any shipping charges disclosed in the listing. If you are outbid, or your bid does not meet the reserve price, you are under no obligation to buy. But in all other cases, you are entering a contract to buy the item, and to deliver payment within the time period specified (48 hours from auction closing). If you cannot pay please don’t bid. Your bids are final and non-retractable. We will not accept e-mail bids.
+
+Bidder Registration
+All persons who wish to bid in the auction or want to purchase must register by creating an online account. To register, the Bidder must provide all of the registration information requested, and sign the Agreement by checking the ‘I AGREE’ box. By checking this box, you acknowledge that you are binding yourself to this contractual agreement. Bidders must be 18 years of age or older and have a valid driver’s license. Community Auctions reserves the right to refuse to register or admit any person at its sole discretion. Invoices and correspondence relating to purchases will be sent in accordance with the information on the bidder’s registration. Your registration will be accepted but your information will be verified and your account may be disabled until the necessary information is provided to verify the account.
+
+Starting Bid
+Community Auctions will predetermine the number of Item(s) in an auction. Community Auctions will set the starting bid on each item. The Starting Bid is designed to encourage bidding. If an item is incorrectly described online, Community Auctions reserves the right to rectify such error and email to all active bidders the correct description.
+
+Extended Bidding
+Community Auctions uses an “extended bidding” process to close all of our auctions. After 8:00 pm CST, for the current auction, the auction will continue for any lots that have multiple bids until there are no bids placed on any lots in the auction in a fifteen (15) minute time frame until 9:00 pm CST. You MUST place a bid on the lot in order to bid in extended bidding. Any lots with only one bid will close at the beginning of extended bidding.
+
+For example, during “extended bidding”, if Item #1 receives a bid within the initial fifteen (15) minute time frame through 9:00pm CST, the auction is extended 15 minutes. All bidders are all on the same playing field and are all equipped with the information required to ensure that the only reason they do not win a given lot is they are not interested in the lot or the price for the lot went above their threshold. The auction is not closed until all bids have been made, and when the auction is closed, the high bidder on every lot is the person who is willing to pay the most for the item. This is precisely what auctions are supposed to accomplish.
+
+This system is great for bidders in that every lot goes to the bidder who is really willing to pay the most for the item. Generating the maximum benefit to the winner’s charity of choice. This is a great example of the reason to use an “extended bidding” closing style. This promotes higher prices, which is great for charities, while at the same time allowing bidders to not get shut out, which is great for bidders. Community Auctions reserves the right to end the auction at any time in extended bidding.
+
+Reserve Auctions
+Unless explicitly stated otherwise by Community Auctions, each Lot is being sold with reserve as a reserve auction. These terms are applicable to all reserve auctions. Community Auctions maintains the right to withdraw any property before and during the sale of such property. The reserve price may not be disclosed. All bids are raised in a minimum of ten dollars ($10) increments and Community Auctions, at its sole and complete discretion, may reject a nominal bid advance.
+
+Reserve Bidding
+All Lots are being sold with a “reserve,” a price below which the Lot will not be sold. Any bid submitted below the reserve price will not result in the purchase of a Lot.  Reserves may be decreased or removed at any time.
+
+Bidder Rights
+All rights granted herein are personal and exclusive to the registered bidder, and may not be assigned or transferred to another person or entity, by operation of law or otherwise. Any attempt to assign or transfer any such rights shall be void and unenforceable. No third party may rely on any benefit or right conferred herein or granted to any Bidder. If you have any questions, please contact Community Auctions immediately.
+
+Disputes between Bidders
+In case of any dispute between bidders, Community Auctions, at its sole and complete discretion, may reopen the bidding pursuant to specific terms determined by Community Auctions between the two highest bidders only, until the property is sold. If a dispute arises after the sale of any lot, Community Auctions’ records shall be deemed conclusive in all respects.
+
+Internet Bidding
+
+(A) Buyer acknowledges that Community Auctions does not have any responsibility or liability for the website(s) used for Internet bidding. Seller acknowledges that the Community Auctions may not have any control over the website(s) and cannot guarantee its operation or performance. There are occasional interruptions and delays relating to the use of the Internet and the Website. Furthermore, Community Auctions shall not be held liable (for lost profits or special damages) or responsible for the function of the website or its inability to function. Buyer acknowledges that hardware malfunctions, software malfunctions, viruses, and similar issues do occur and are beyond the knowledge, scope, and control of Community Auctions.
+(B) The website is administered by Community Auctions from its offices in the United States of America. Individuals must reside within the United States of America to register to bid online. Community Auctions will not accept bids from individuals who reside outside of the United States of America and its territories. If you access the website from a location outside of the United States of America and its territories, Buyer consents to exclusive and continuing jurisdiction in the United States of America and agrees to be bound by and comply with all applicable laws.
+(C) Community Auctions reserves the right to deny any person for any reason permission or access to bid online.
+(D) Winning bidders will be notified via email at the auction close.
+
+
+Community Auctions disclaims any liability for damages, whether direct, indirect, consequential, or incidental, resulting from bids not spotted, executed, or accepted. Bidders should also be careful to bid on the correct lot and ensure that his/her bid is for the amount intended. Community Auctions is not responsible for computer or human error which may result in any customer dissatisfaction. We reserve the right to accept or reject any and all bids or bidders. Community Auctions reserves the right to request a deposit at any time for what Community Auctions considers excess bidding to continue to bid in a specified auction.  The sale is complete when Community Auctions so announces.
+
+Time of the Auction
+An auction starts and will close on the dates specified on the auction item’s detail page. However, Community Auctions follows the 15-minute Overtime rule. This rule means that the auction can continue for an additional fifteen (15) minutes, up to four (4) times totaling one (1) hour, for verified bidders that have bid on any particular lot prior to the close. The auction has ended when Community Auctions’ website indicates the auction is closed.
+
+Stop Payment/Insufficient Funds
+Upon making payment for a lot(s), no stop payment of funds will be honored. Any stop payment order shall be deemed by the parties to be prima facie evidence of fraud existing at the time the transaction was consummated and shall be construed by the parties as intent to defraud.
+
+Sale by Lots
+Community Auctions reserves the right to include in the auction any Lot and the right to withdraw any Lot prior to posting for bids at the beginning of the auction. Community Auctions may combine, subdivide, regroup or reorganize any Lots.
+
+Authentication
+Each Lot shall disclose what Authentication accompanies it. The buyer should not bid on a Lot if he or she is uncomfortable with the authenticator.  We will issue refunds on items, under certain conditions that have been legally found to be fraudulent, or unauthentic.
+
+We are here to offer Customer Service to our clients and returns will be accepted under certain conditions which will be determined by the company.  In our 30 years of experience, we have not had any issues. Items are sold with the Letter of Authenticity as described and items will not be refunded due to differing Authenticators and Authentication opinions
+
+For cards and autographs appearing without professionally grading, we strive to accurately assess quality. However, Community Auctions does not guarantee their opinion and the Buyer assumes the risk. Community Auctions is not responsible if a professional evaluation disagrees with Community Auctions’ opinion or with other Authenticators’ opinions.
+
+Payment
+Payment in full must be paid by Buyer in the form of a money order or major credit card (if you have a question about whether a credit card is accepted please call Community Auctions before the sale), prior to the delivery of any item purchased. Money orders are preferred. Community Auctions reserves the right to refuse credit card payments. Buyer shall pay the purchase price, shipping, and handling charges (if any), plus any and all applicable taxes unless such taxes are exempted by law (proof of exemption must be provided). If any Bidder/Buyer does not pay Community Auctions for any Item(s) within forty-eight (48) hours after the end of an Auction, Community Auctions has the right to offer the item(s) to the 2nd highest bidder for payment. If Auction does not have a 2nd highest bidder, the item may be relisted for sale online or added to another auction lot in the future. Failure to fulfill Buyer’s payment obligations will affect future bidding privileges.
+
+Acceptance of Terms
+A bid placed by any person shall be conclusive proof that he or she acquainted himself or herself with the terms and conditions of sale and agreed to be bound by such terms and conditions prior to placing any bid.
+
+Breach of Contract
+If this Agreement, or any terms and conditions announced by Community Auctions, are not complied with, in addition to other remedies available to the seller by law, including without limitation, the right to hold the Buyer liable for the bid price, Community Auctions may: (1) publicly or privately resell the property, with the non-complying Buyer being held liable for the payment of any deficiency purchase price, plus all costs incurred; and/or (2) cancel the sale and retain as liquidated damages all payments made by the non-complying Buyer. Community Auctions’ commissions, all incidental damages, expenses, court costs, costs of collection, and/or attorneys’ fees will be charged to and be the responsibility of the non-complying Buyer.
+
+Limitation of Liability
+IN NO EVENT SHALL COMMUNITY AUCTIONS BE LIABLE TO BUYER FOR ANY INDIRECT, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOST PROFITS ARISING OUT OF OR RELATED TO THIS AUCTION OR THE PERFORMANCE OR BREACH THEREOF. COMMUNITY AUCTIONS’ LIABILITY TO A BIDDER SHALL IN NO EVENT EXCEED THE TOTAL OF THE PURCHASE PRICE, BUYER’S PREMIUM, AND TAXES PAID BY BIDDER TO COMMUNITY AUCTIONS, REGARDLESS OF WHETHER BUYER’S CLAIM IS BASED ON CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE.
+
+Severability
+If any provision of this Agreement is declared or determined to be null, void, inoperative, illegal or invalid for any reason, the validity of the remaining parts, terms or provisions will not be affected thereby and they will retain their full force and effect, and said null, void, inoperative, illegal or invalid part, term or provision will not be deemed to be part of this Agreement.
+
+Interpretation
+Each party to this Agreement acknowledges that it has read, or has had the opportunity to read, the terms provided herein. The parties agree that this Agreement reflects the terms as agreed to by the parties hereto. In the event a term or terms is considered ambiguous, neither party hereto, nor their respective counsel, will be considered the draftsperson of this agreement for the purpose of causing the terms of this Agreement to be construed against a party hereto.
+
+Applicable Law
+The parties hereto acknowledge and agree that this Agreement is made and entered into in the State of Arkansas, Garland County and will in all respects be interpreted, enforced and governed under the internal laws (and not the conflicts of laws) of the State of Arkansas. In the event that the parties hereto, or anyone of them, litigate any actual or potential breach of this Agreement, the parties hereto stipulate and agree that the exclusive and continuing venue for any such action will be in Garland County, State of Arkansas, or the United States District Court, located in the State of Arkansas.
+
+
+
+RETURN POLICY
+
+All online items are sold in “as is” condition.  A limited guarantee is offered with regards to the following: all hand signatures are guaranteed authentic. Weight, size, estimated value, origin, grade, quality, age, condition, rarity, and importance, are not guaranteed for any item. All sales are final unless a gross error on description has been made. Any disputes must be made within thirty (30) days of receiving the item. No returns will be accepted without a valid return authorization from Community Auctions. Community Auctions will not refund above and beyond the original costs.  Any additional charges incurred by the winning bidder, including appraisals, insurance, return shipping, etc. will not be covered by any refund.
+
+30-Day Refund Resolution Policy except where exclusions apply.
+
+List of Excluded Reasons:
+
+    Varying or differing authentication opinions from that of the item described and posted authentication.
+    Item not received on time."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

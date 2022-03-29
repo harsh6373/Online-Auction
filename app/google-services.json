@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359523160962",
+    "project_id": "online-auction-12c86",
+    "storage_bucket": "online-auction-12c86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359523160962:android:6cb959ce0b8873a8d7359b",
+        "android_client_info": {
+          "package_name": "com.example.online_auction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359523160962-58a32nh5mnku890ll6fpujmc0fnjle7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDXlDrQqH2HP7t4b6coEN91EmHEUeW8zM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359523160962-58a32nh5mnku890ll6fpujmc0fnjle7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

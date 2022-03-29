@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dproduct1">
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <FrameLayout
+        android:id="@+id/framehome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Product Details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+
+        <View
+            android:layout_width="540dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="00dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="67dp"
+            android:background="@android:color/darker_gray"
+            android:paddingStart="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANTIQUE SHOWPIECE BRASS AND WOODEN GRAMOPHONE 23 cm  (Brass, Gold)"
+        android:textSize="25sp"
+        android:layout_marginTop="80dp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/p1"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="100dp"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details :"
+        android:textSize="25sp"
+        android:layout_marginTop="460dp"
+        android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: Gramophone Musical Instrument Showpiece"
+        android:textSize="20sp"
+        android:layout_marginTop="500dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material: Brass"
+        android:textSize="20sp"
+        android:layout_marginTop="570dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme: Vintage"
+        android:textSize="20sp"
+        android:layout_marginTop="610dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dimensions: 12 cm x 23 cm x 12 cm"
+        android:textSize="20sp"
+        android:layout_marginTop="650dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight: 300 g"
+        android:textSize="20sp"
+        android:layout_marginTop="715dp"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auction : H Auction"
+            android:textSize="20sp"
+            android:layout_marginTop="760dp"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller : Harsh"
+            android:textSize="20sp"
+            android:layout_marginTop="800dp"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Bid : 300"
+            android:textSize="20sp"
+            android:layout_marginTop="850dp"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Enter Bid"
+            android:textSize="20sp"
+            android:layout_marginTop="930dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+             />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="200dp"
+            android:background="@drawable/borderbutton"
+            android:layout_height="wrap_content"
+            android:text="BID"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1000dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="1060dp"/>
+
+
+    </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

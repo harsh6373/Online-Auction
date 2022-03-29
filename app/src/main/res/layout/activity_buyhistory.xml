@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buyhistory">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bootonnav">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/history"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="200dp"
+                android:text="Buy History"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="500dp"
+                android:layout_height="4dp"
+                android:id="@+id/hr"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="250dp"
+                android:background="@android:color/darker_gray" />
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="270dp"
+                android:src="@drawable/f4" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:text="New Balance Mens Sport Sneaker Shoes"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Auction Details: H Auction  Email Address: example123@gmail.com"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="520dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Seller Detail : Harsh Email Address: Example123@gmail.com"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="590dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: New Balance Mens 770.9 Blue Sport Running Shoes Sneakers 7 Medium (D) BHFO 0180"
+                android:layout_marginTop="670dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                />
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Price : 5000"
+                android:layout_marginTop="780dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : "
+                android:layout_marginTop="840dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solded"
+                android:layout_gravity="left"
+                android:textColor="@color/lightgreen"
+                android:layout_marginTop="840dp"
+                android:layout_marginLeft="160dp"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="500dp"
+                android:layout_height="4dp"
+                android:id="@+id/hr1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="900dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="940dp"
+
+                />
+
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>
