@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nametext" type="id" />
+    <item name="coursetext" type="id" />
+    <item name="emailtext" type="id" />
+</resources>

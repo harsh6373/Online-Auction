@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativelayout"
+    tools:context=".sellproduct">
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/framehome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="186dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/todo"
+                android:paddingTop="20dp"
+                android:src="@drawable/sellproduct" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="185dp"
+                android:text="Are You Ready To Sell ?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="230dp"
+                android:text="Post Auction"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp" />
+
+            <EditText
+                android:id="@+id/auctionname"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="  Enter Auction Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/categoryselect"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/square_border"
+                android:tooltipText="Select Category" />
+
+            <EditText
+                android:id="@+id/Descriptionauction"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="420dp"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="  Enter Description"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="15dp" />
+
+            <EditText
+                android:id="@+id/hostname"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="  Enter Name Of Host"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnPick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="590dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:hint="Pick Date and Time"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/Uploadimg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="660dp"
+                android:background="@drawable/borderbutton"
+                android:text="Upload Image"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/submitbutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="980dp"
+                android:background="@drawable/borderbutton"
+                android:text="Post Auction"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1000dp"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="730dp"
+                android:background="@drawable/square_border" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1100dp"
+                android:textSize="30sp" />
+
+
+        </FrameLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bootonnav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        app:menu="@menu/seller" />
+
+    </RelativeLayout>
