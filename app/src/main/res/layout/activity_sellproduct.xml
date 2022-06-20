@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relativelayout"
     tools:context=".sellproduct">
 
 
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
+
         <FrameLayout
             android:id="@+id/framehome"
             android:layout_width="match_parent"
@@ -23,161 +25,146 @@
                 android:layout_width="186dp"
                 android:layout_height="171dp"
                 android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/todo"
                 android:paddingTop="20dp"
-                android:src="@drawable/sellproduct"
-                android:contentDescription="@string/todo" />
+                android:src="@drawable/sellproduct" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:paddingTop="185dp"
                 android:text="Are You Ready To Sell ?"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Post Product"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="230dp"
-                />
+                android:text="Post Products"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-            <View
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="270dp"
-                android:background="@android:color/darker_gray" />
-
-            <Spinner
-                android:id="@+id/auctionselect"
-                android:layout_width="280dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="300dp"
-                android:background="@drawable/square_border"
-                android:tooltipText="Select Auction" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp" />
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/productname"
                 android:layout_width="300dp"
                 android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/border"
                 android:ems="10"
                 android:hint="  Enter Product Name"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="360dp"
                 android:inputType="textPersonName"
-                android:paddingLeft="15dp" />
+                android:paddingLeft="15dp"
+                android:textSize="18sp" />
 
             <Spinner
+                android:id="@+id/categoryselectproduct"
                 android:layout_width="280dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="430dp"
                 android:layout_gravity="center_horizontal"
-                android:tooltipText="Select Category"
+                android:layout_marginTop="370dp"
                 android:background="@drawable/square_border"
-                android:id="@+id/categoryselect"/>
+                android:tooltipText="Select Category" />
 
             <EditText
-                android:id="@+id/Address"
+                android:id="@+id/Descriptionproduct"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
-                android:autofillHints=""
-                android:background="@drawable/border"
-                android:ems="10"
-                android:hint="  Enter Full Details"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="495dp"
-                android:inputType="textPostalAddress"
-                android:paddingLeft="15dp" />
-
-            <EditText
-                android:id="@+id/bidprice"
-                android:layout_width="300dp"
-                android:layout_height="51dp"
-                android:background="@drawable/border"
-                android:ems="10"
-                android:hint="  Enter Min Bid Price"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="595dp"
-                android:inputType="number"
-                android:paddingLeft="15dp" />
-
-            <EditText
-                android:id="@+id/date"
-                android:layout_width="300dp"
-                android:layout_height="51dp"
-                android:background="@drawable/border"
-                android:ems="10"
-                android:hint="  Enter Date To Post"
-                android:textSize="18sp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="665dp"
-                android:inputType="date"
-                android:paddingLeft="15dp" />
-
-
-            <EditText
-                android:id="@+id/description"
-                android:layout_width="300dp"
-                android:layout_height="80dp"
+                android:layout_marginTop="420dp"
                 android:autofillHints=""
                 android:background="@drawable/border"
                 android:ems="10"
                 android:hint="  Enter Description"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="735dp"
                 android:inputType="textPostalAddress"
                 android:paddingLeft="15dp" />
 
+            <EditText
+                android:id="@+id/bidpriceproduct"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="  Enter Min Bid Price"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textSize="18sp" />
 
             <Button
-                android:id="@+id/Uploadimg"
+                android:id="@+id/datetimeproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="590dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:hint="Pick Date and Time"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/Uploadimg_product"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="660dp"
                 android:background="@drawable/borderbutton"
                 android:text="Upload Image"
+                android:textColor="@color/colorWhite"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="840dp"
-                android:textColor="@color/colorWhite" />
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/submitbutton"
+                android:id="@+id/postproduct"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="980dp"
                 android:background="@drawable/borderbutton"
                 android:text="Post Product"
+                android:textColor="@color/colorWhite"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="920dp"
-                android:textColor="@color/colorWhite" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:layout_marginTop="1000dp"/>
+                android:layout_marginTop="1000dp"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imgproduct"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="730dp"
+                android:background="@drawable/square_border" />
 
 
-
-
-
-
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1100dp"
+                android:textSize="30sp" />
 
 
         </FrameLayout>

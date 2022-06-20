@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public class navprofile extends AppCompatActivity {
 
-    ListView lvAvaialbleContributors;
+    ListView buyerlistview;
     FirebaseDatabase mDatabase;
     DatabaseReference mGetReference;
     ArrayList<User> buyerArrayList;
@@ -38,7 +38,7 @@ public class navprofile extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance();
         mGetReference = mDatabase.getReference("Buyers");
-        lvAvaialbleContributors = findViewById(R.id.retriveddata);
+        buyerlistview = findViewById(R.id.retriveddata);
         buyerArrayList = new ArrayList<>();
 
         user1 = FirebaseAuth.getInstance().getCurrentUser();
@@ -89,10 +89,13 @@ public class navprofile extends AppCompatActivity {
                 if (dataSnapshot.exists()) {
                     for (DataSnapshot child : dataSnapshot.getChildren()) {
                         user = new User(
-                                child.child("name").getValue().toString(),
-                                child.child("email").getValue().toString(),
-                                child.child("phoneno").getValue().toString(),
-                                child.child("address").getValue().toString());
+                                dataSnapshot.child(user1.getUid()).child("name").getValue().toString(),
+                         dataSnapshot.child(user1.getUid()).child("email").getValue().toString(),
+                       dataSnapshot.child(user1.getUid()).child("phoneno").getValue().toString(),
+                       dataSnapshot.child(user1.getUid()).child("address").getValue().toString());
+
+
+
                     }
                     buyerArrayList.add(user);
 
@@ -100,7 +103,7 @@ public class navprofile extends AppCompatActivity {
 
                     BuyerProfileAdapter buyerProfileAdapter = new BuyerProfileAdapter(navprofile.this,
                             buyerArrayList);
-                    lvAvaialbleContributors.setAdapter(buyerProfileAdapter);
+                    buyerlistview.setAdapter(buyerProfileAdapter);
                 }
             }
             @Override

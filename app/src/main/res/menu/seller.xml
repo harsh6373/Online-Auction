@@ -7,7 +7,7 @@
         />
     <item android:id="@+id/smenu_sellproduct"
         android:icon="@drawable/ic_baseline_add_shopping_cart_24"
-        android:title="SELL PRODUCT"
+        android:title="POST AUCTION"
         />
     <item android:id="@+id/smenu_bidrequests"
         android:icon="@drawable/ic_baseline_request_page_24"

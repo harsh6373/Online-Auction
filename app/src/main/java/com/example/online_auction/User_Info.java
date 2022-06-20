@@ -41,6 +41,8 @@ public class User_Info extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +88,7 @@ public class User_Info extends AppCompatActivity {
 
                     addDatatoFirebase(u_name,u_email,u_address,u_phoneno);
 
-                    Intent i = new Intent(getApplicationContext(),Home.class);
+                    Intent i = new Intent(getApplicationContext(),sellerhome.class);
                     startActivity(i);
 
                 }

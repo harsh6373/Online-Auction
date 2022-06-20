@@ -91,7 +91,8 @@ MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = email1.getText().toString().trim();
                 String password = password1.getText().toString().trim();
-                if (email.isEmpty()) {
+
+            if (email.isEmpty()) {
                     email1.setError("Email is empty");
                     email1.requestFocus();
                     return;
@@ -111,6 +112,7 @@ MainActivity extends AppCompatActivity {
                     password1.requestFocus();
                     return;
                 }
+
                  user = mAuth.getCurrentUser();
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                     if(user.isEmailVerified()) {

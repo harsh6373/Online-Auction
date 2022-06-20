@@ -53,7 +53,7 @@
             android:layout_below="@id/addressbuyerretrive"
             android:background="@drawable/borderbutton"
             android:text="Update Profile"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

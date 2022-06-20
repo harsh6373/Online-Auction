@@ -16,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User_Info"></activity>
+        <activity
+            android:name=".postauction"
+            android:exported="false" />
+        <activity android:name=".User_Info" />
         <activity android:name=".buyhistory" />
         <activity android:name=".terms_and_condition" />
         <activity android:name=".Feedback" />
@@ -24,8 +27,6 @@
         <activity android:name=".About_Us" />
         <activity android:name=".Password_Updated" />
         <activity android:name=".ResetPassword" />
-        <activity android:name=".F_verification" />
-        <activity android:name=".Forgot_Password" />
         <activity android:name=".sellhistory" />
         <activity android:name=".sellproduct" />
         <activity android:name=".sellerprofile" />

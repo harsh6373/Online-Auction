@@ -5,84 +5,46 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class sellerprofile extends AppCompatActivity {
-    public TextView bidrequests,sellhistory,aboutus,contactus,terms,feedback;
-    Button logout;
+
+    ListView sellerlistview;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    ArrayList<User> sellerArrayList;
+    User user;
+    FirebaseUser firebaseUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sellerprofile);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("Sellers");
+        sellerlistview = findViewById(R.id.retriveddata_seller);
+        sellerArrayList = new ArrayList<>();
 
-        logout=(Button)findViewById(R.id.logoutt);
-        bidrequests=(TextView) findViewById(R.id.bidrequest);
-       sellhistory=(TextView) findViewById(R.id.sellhisoryy);
-        aboutus=(TextView) findViewById(R.id.aboutuss);
-        contactus=(TextView) findViewById(R.id.contactuss);
-        terms=(TextView) findViewById(R.id.termsconditionss);
-        feedback=(TextView) findViewById(R.id.feedbackk);
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
-            }
-        });
-
-
-        bidrequests.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), com.example.online_auction.bidrequests.class);
-                startActivity(i);
-            }
-        });
-
-        sellhistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), sellhistory.class);
-                startActivity(i);
-            }
-        });
-        aboutus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), About_Us.class);
-                startActivity(i);
-            }
-        });
-        contactus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Contact_Us.class);
-                startActivity(i);
-            }
-        });
-        terms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), terms_and_condition.class);
-                startActivity(i);
-            }
-        });
-        feedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Feedback.class);
-                startActivity(i);
-            }
-        });
+        getData();
 
         BottomNavigationView bnv = (BottomNavigationView)findViewById(R.id.bootonnav);
         bnv.setSelectedItemId(R.id.smenu_profile);
@@ -102,7 +64,7 @@ public class sellerprofile extends AppCompatActivity {
                         return true;
 
                     case R.id.smenu_bidrequests :
-                        startActivity(new Intent(getApplicationContext(), com.example.online_auction.bidrequests.class));
+                        startActivity(new Intent(getApplicationContext(), bidrequests.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -118,4 +80,38 @@ public class sellerprofile extends AppCompatActivity {
 
 
     }
+
+    private void getData () {
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot child : dataSnapshot.getChildren()) {
+                        user = new User(
+                                dataSnapshot.child(firebaseUser.getUid()).child("name").getValue().toString(),
+                                dataSnapshot.child(firebaseUser.getUid()).child("email").getValue().toString(),
+                                dataSnapshot.child(firebaseUser.getUid()).child("phoneno").getValue().toString(),
+                                dataSnapshot.child(firebaseUser.getUid()).child("address").getValue().toString());
+
+
+
+                    }
+                    sellerArrayList.add(user);
+
+                    //  Log.v("DS","listsize"+contributorArrayList.size());
+
+                    SellerProfileAdapter sellerProfileAdapter = new SellerProfileAdapter(sellerprofile.this,
+                            sellerArrayList);
+                    sellerlistview.setAdapter(sellerProfileAdapter);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
 }
