@@ -25,4 +25,15 @@ It developed with the objective of making the system reliable, easier and fast. 
 ![39](https://user-images.githubusercontent.com/61573985/179351067-ea0866de-7a47-4fd4-92f2-217d461d2a75.jpeg)
 ![22](https://user-images.githubusercontent.com/61573985/179351071-cdd08b03-4fcb-4bc6-9912-61684445cc1c.jpeg)
 
+# License
+
+    Copyright 2022 Harsh jani
+
+    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+   
+    Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+
  MADE WITH :heart: BY HARSH
